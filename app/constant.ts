@@ -1,7 +1,7 @@
-export const OWNER = "Licoy";
+export const OWNER = "1Chat-AI
 export const REPO = "1Chat-AI绘画";
-export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
-export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
+export const REPO_URL = `https://1.11chat.cc/${OWNER}/${REPO}`;
+export const ISSUE_URL = `https://1.11chat.cc/${OWNER}/${REPO}/issues`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/commits?per_page=1`;
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
