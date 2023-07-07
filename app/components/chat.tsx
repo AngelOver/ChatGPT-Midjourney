@@ -527,8 +527,17 @@ export function Chat() {
     };
 
     const doSubmit = async (userInput: string) => {
+
+
         userInput = userInput.trim();
+
         if (useImages.length > 0) {
+            if (!(
+                useImages.toLowerCase().startsWith("/mj") ||
+                useImages.toLowerCase().startsWith("/MJ"))
+            ){
+                setUserInput("/mj "+useImages) ;
+            }
             if (mjImageMode === "IMAGINE" && userInput == "") {
                 alert(Locale.Midjourney.NeedInputUseImgPrompt);
                 return;
