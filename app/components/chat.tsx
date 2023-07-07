@@ -532,12 +532,6 @@ export function Chat() {
         userInput = userInput.trim();
 
         if (useImages.length > 0) {
-            if (!(
-                useImages.toLowerCase().startsWith("/mj") ||
-                useImages.toLowerCase().startsWith("/MJ"))
-            ){
-                setUserInput("/mj "+useImages) ;
-            }
             if (mjImageMode === "IMAGINE" && userInput == "") {
                 alert(Locale.Midjourney.NeedInputUseImgPrompt);
                 return;
@@ -546,6 +540,13 @@ export function Chat() {
             if (userInput == "") return;
         }
         setIsLoading(true);
+        if (!(
+            userInput.toLowerCase().startsWith("/mj") ||
+            userInput.toLowerCase().startsWith("/MJ"))
+        ){
+            setUserInput("/mj "+userInput) ;
+            userInput = "/mj "+userInput;
+        }
         try {
             const res: any = await chatStore.onUserInput(userInput, {
                 useImages,
