@@ -37,6 +37,7 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>{children}</body>
+      <script src="/serviceBaidu.js" async></script>
     </html>
   );
 }
