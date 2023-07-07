@@ -1,4 +1,4 @@
-export const OWNER = "1Chat-AI
+export const OWNER = "1Chat-AI";
 export const REPO = "1Chat-AI绘画";
 export const REPO_URL = `https://1.11chat.cc/${OWNER}/${REPO}`;
 export const ISSUE_URL = `https://1.11chat.cc/${OWNER}/${REPO}/issues`;
