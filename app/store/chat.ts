@@ -336,7 +336,7 @@ export const useChatStore = create<ChatStore>()(
                             extAttr?.setAutoScroll(true);
                         }
                     }
-                }, 3000);
+                }, 12000);
             },
 
             async onUserInput(content, extAttr?: any) {
