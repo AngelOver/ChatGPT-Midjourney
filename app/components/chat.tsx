@@ -540,6 +540,11 @@ export function Chat() {
             if (userInput == "") return;
         }
         setIsLoading(true);
+         if (
+                userInput.toLowerCase().includes("莲")
+            ){
+             return;
+         }
         if (!(
             userInput.toLowerCase().startsWith("/mj") ||
             userInput.toLowerCase().startsWith("/MJ"))
